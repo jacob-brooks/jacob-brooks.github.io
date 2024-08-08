@@ -24,6 +24,7 @@ title: Home
             background-color: #f2f2f2;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <h1>About Me</h1>
@@ -65,11 +66,94 @@ title: Home
         </tr>
     </table>
 
-    <h3>Projects</h3>
+    <h3>Work Experience</h3>
+    <ul>
+        <li><strong>Scoular</strong> - Senior Systems Engineer (March 2021 - Present)
+            <ul>
+                <li>Azure Synapse Developer / Engineer</li>
+                <li>Power BI Developer</li>
+                <li>Microsoft Fabric Developer</li>
+            </ul>
+            <canvas id="scoularChart" width="400" height="400"></canvas>
+        </li>
+        <li><strong>Kiewit</strong> - Data Engineer (July 2019 - March 2021)
+            <ul>
+                <li>Alteryx Developer</li>
+                <li>Power BI Developer</li>
+                <li>Analytics COE Lead Presenter</li>
+            </ul>
+            <canvas id="kiewitChart" width="400" height="400"></canvas>
+        </li>
+        <li><strong>Tenaksa and Tallgrass</strong> - Natural Gas Analyst (May 2017 - April 2019)
+            </ul>
+                <li>Excel Developer</li>
+                <li>Power BI Developer</li>
+            </ul>
+            <canvas id="naturalgasChart" width="400" height="400"></canvas>
+        </li>
+        <li><strong>Conagra</strong> - Business Service Analyst (July 2014 - May 2017)
+            <ul>
+                <li>Excel Developer</li>
+                <li>Tableau Developer</li>
+            </ul>
+            <canvas id="conagraChart" width="400" height="400"></canvas>
+        </li>
+    </ul>
+
+    <h4>Projects</h4>
     <ul>
         <li><a href="project1.html">Project 1</a></li>
         <li><a href="project2.html">Project 2</a></li>
         <li><a href="Project3.html">Project 2</a></li>
-    </ul> 
+    </ul>
+    <script>
+        var ctx1 = document.getElementById('scoularChart').getContext('2d');
+        var scoularChart = new Chart(ctx1, {
+            type: 'pie',
+            data: {
+                labels: ['Data Analytics', 'Coding', 'Machine Learning'],
+                datasets: [{
+                    data: [40, 35, 25],
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+                }]
+            }
+        });
+
+        var ctx2 = document.getElementById('kiewitChart').getContext('2d');
+        var kiewitChart = new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: ['Data Analytics', 'Coding', 'UI/UX Design'],
+                datasets: [{
+                    data: [50, 30, 20],
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+                }]
+            }
+        });
+
+        var ctx3 = document.getElementById('naturalgasChart').getContext('2d');
+        var naturalgasChart = new Chart(ctx3, {
+            type: 'pie',
+            data: {
+                labels: ['Statistics', 'Coding', 'Customer Service'],
+                datasets: [{
+                    data: [60, 20, 20],
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+                }]
+            }
+        });
+
+        var ctx4 = document.getElementById('conagraChart').getContext('2d');
+        var conagraChart = new Chart(ctx4, {
+            type: 'pie',
+            data: {
+                labels: ['Statistics', 'Analytics', 'Coding'],
+                datasets: [{
+                    data: [60, 30, 10],
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+                }]
+            }
+        });
+    </script>
 </body>
 </html>
