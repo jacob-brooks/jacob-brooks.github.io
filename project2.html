@@ -5,7 +5,62 @@
     <title>Project 2</title>
 </head>
 <body>
-    <h1>Project 2: [Project Title]</h1>
-    <p>[Description of your project]</p>
+    <h1>Project 2: Credit Card Fraud Detection Using Machine Learning
+        Team: Cali Hugelen, Edith Tache, Jacob Brooks, Remington Webb
+        Date: Summer 2024
+    </h1>
+    <p>Introduction
+        In the digital age, robust fraud detection systems are essential to safeguard financial transactions. This project explores the impact of transaction characteristics and demographics on fraud detection through machine learning. By analyzing various features from a comprehensive credit card transaction dataset, we developed a predictive model to effectively identify fraudulent activities. Our goal is to enhance transaction security and minimize losses for financial institutions.
+        
+        Dataset
+        The project utilizes the "Credit Card Fraud Transaction Data" from Kaggle, which includes diverse features influencing fraud likelihood. Access the dataset here.
+        
+        Business Problem
+        We aim to address key questions:
+        
+        Which transaction features most strongly indicate fraud?
+        How do different entry modes (e.g., Tap, PIN, CVC) affect fraud likelihood?
+        What role do demographic factors play in fraud prediction?
+        Can we build an effective predictive model for fraud detection?
+        Methodology
+        Data Preparation
+        
+        Cleaning: Processed column names, adjusted data types, and handled missing values.
+        Quality Assessment: Checked for missing values and duplicates, and reviewed summary statistics.
+        Exploratory Data Analysis (EDA)
+        
+        Visualized the distribution of fraudulent vs. non-fraudulent transactions.
+        Analyzed fraud distribution across various transaction features and demographics.
+        Feature Engineering
+        
+        Dropped irrelevant columns and encoded categorical variables.
+        Normalized numerical features and performed correlation analysis.
+        Model Training and Evaluation
+        
+        Models Used: Logistic Regression and Random Forest.
+        Training: Implemented class weight adjustments for imbalanced data.
+        Evaluation Metrics: Precision, Recall, F1-Score, ROC-AUC, and Confusion Matrix.
+        Results
+        
+        Random Forest Model: 
+        
+        Outperformed Logistic Regression in precision, recall, and overall balance. High ROC-AUC score of 0.9922 demonstrated strong performance in distinguishing between fraudulent and non-fraudulent transactions.
+        
+        Insights:
+        
+        Identified critical factors influencing fraud, including transaction characteristics, entry modes, and demographic factors.
+        Recommendations for improving fraud detection include enhancing online security, focusing on high-risk transaction types and entry modes, and strengthening regional fraud prevention.
+        
+        Recommendations:
+
+        1. Strengthen Security Measures for online and high-risk transactions.
+        2. Enhance Regional Fraud Prevention with tailored strategies for different countries.
+        3. Monitor and Secure Entry Modes with advanced fraud detection algorithms.
+        4. Target High-Risk Age Groups with specific security protocols.
+        
+        Future Work:
+
+        Future research should focus on integrating real-time fraud detection systems, expanding cross-industry and cross-regional studies, and exploring advanced machine learning techniques to improve model accuracy and robustness.
+    </p>
 </body>
 </html>

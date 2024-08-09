@@ -5,7 +5,92 @@
     <title>Project 3</title>
 </head>
 <body>
-    <h1>Project 3: [Project Title]</h1>
-    <p>[Description of your project]</p>
+    <h1>Project 3: Analyzing the Impact of Reviews on Airbnb Booking Rates
+        Authors: Edith Tache, Cali Hugelen, Jacob Brooks, Remington Webb
+        Season: Summer, 2024
+    </h1>
+    <p>Introduction
+
+        Objective: 
+        Examine how reviews impact Airbnb booking rates in California.
+
+        Approach: 
+        Utilize Kaggle dataset to analyze the relationship between review attributes and booking rates through data cleaning, exploratory data analysis (EDA), and predictive modeling.
+        
+        Dataset: 
+        "AirBnB Listings in California" from Kaggle includes attributes such as price, review scores, and host details.
+        
+        Business Problem/Hypothesis
+        
+            - Research Questions:
+                Impact of the number of reviews on booking rates.
+                Impact of review quality on booking rates.
+                Key factors in reviews contributing to higher booking rates.
+        
+            -Hypotheses:
+                Number of reviews significantly affects booking rates.
+                Higher review scores correlate with higher booking rates.
+                Methods/Analysis
+
+        Data Cleaning and Preparation: 
+        Dropped unnecessary columns, handled missing values, and created features like booking rate.
+        
+        Exploratory Data Analysis (EDA): 
+        Analyzed outliers, review count distribution, and review scores' impact using visualizations like box plots and scatter plots.
+        
+        Feature Engineering: 
+        Encoded categorical variables and normalized features.
+        
+        Model Training and Evaluation:
+        
+            -Models: 
+                Random Forest Regressor and XGBoost Regressor.
+                Training: 
+                    Both models were trained and evaluated for predictive performance.
+                    Hyperparameter Tuning: Conducted using RandomizedSearchCV and GridSearchCV.
+                Metrics: 
+                    Mean Squared Error (MSE) and R² Score were used to evaluate models.
+        
+            -Results
+                Model Performance:
+
+                    Random Forest Regressor:
+                    Pre-Tuning: MSE = 0.0778, R² = 0.4356.
+                    Post-Tuning: MSE = 0.0794, R² = 0.4238.
+        
+                    XGBoost Regressor:
+                    Pre-Tuning: MSE = 0.1115, R² = 0.1913.
+                    Post-Tuning: MSE = 0.1050, R² = 0.2380.
+        
+        Key Findings: 
+        Random Forest performed better than XGBoost, indicating robustness but with room for improvement. Review quantity did not directly impact booking rates, whereas review quality had a weak positive correlation.
+        
+        Recommendations/Ethical Considerations
+        
+        Strategies for Hosts:
+            Optimize pricing strategies.
+            Improve host acceptance rates and responsiveness.
+            Enhance property features.
+            Leverage reviews and guest feedback.
+        
+        Ethical Considerations: 
+        Ensure transparency, accuracy in listings, and protection of guest data.
+        
+        Limitations and Future Work
+
+        Limitations:
+            Data quality and completeness issues.
+            Regional specificity (California).
+            Snapshot nature of data.
+        
+        Future Work:
+            Expand dataset to multiple regions.
+            Conduct dynamic and time-series analysis.
+            Explore advanced predictive models.
+        
+        Conclusion
+        
+        Summary: 
+        Review quality slightly correlates with booking rates, but price is the most significant factor. Effective pricing strategies, high property standards, and prompt host responses are crucial for optimizing booking rates.</p>
 </body>
 </html>
